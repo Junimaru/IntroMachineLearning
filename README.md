@@ -21,7 +21,7 @@ Arah angin diukur dalam derajat searah jarum jam dari arah utara. Akibatnya, ang
 6. Cuaca (weather_main)
 Pengggambaran Kondisi Cuaca yang terdapat pada suatu tempat dengan dideskripsikan oleh beberrapa jenis cuaca antara lain: Rain, Clouds, Thunderstorm, Clean, Haze, Dust, Fog, Mist, Squall, Tornado, Smoke, Drizzle, Ash.
 
-<img src="img/01.ReadDataframe.jpg" width="1000"/>
+<img src="img/01.ReadDataframe.jpg" width="500"/>
 
 Pada artikel ini akan dilakukan analisa terhadap cuaca pada Kota Denpasar yang dipengaruhi oleh faktor-faktor di atas, dengan horizon data selama 20 tahun antara 1990 s,d Januari 2020 yang diukur secara konsisten per Jam.
 
@@ -39,7 +39,7 @@ Ekslporasi data pada keseluruhan dataset dilakukan untuk mengetahui deskripsi da
 ```
 round(weather.describe(),2)
 ```
-<img src="img/02.DescriptiveStatistics.jpg" width="1000"/>
+<img src="img/02.DescriptiveStatistics.jpg" width="500"/>
 
 Secara umum hal yang dapat dijelaskan berdasarkan deskripsi statistik data di atas antara lain:
 
@@ -50,7 +50,7 @@ Selanjutnya akan dilihat bagaimana distribusi cuaca tersebut serta apakah terdap
 # Distribusi dan Proporsi
 
 <img src="img/03.DataVisualization.jpg" width="1000"/>
-<img src="img/04.Label Count.jpg" width="1000"/>
+<img src="img/04.Label Count.jpg" width="500"/>
 
 
 Pertama dilakukan bentuk distirbusi untuk tiap jenis dari variabel target dengan hasil sbb.
@@ -68,7 +68,7 @@ Hasil penggambaran grafik secara sekilas, Untuk data setelah split diperlukan ad
 
 Setelah melakukan ekspolarsi pada data seutuhnya maka selanjutnya dilakukan splitting data dengan hasil ringkasan sbb :
 
-<img src="img/05.DescriptiveDataTrain.jpg" width="1000"/>
+<img src="img/05.DescriptiveDataTrain.jpg" width="500"/>
 
 
 ## Eksplorasi Data Cuaca Kota Denpasar Fase 2 (Setelah Splitting data)
@@ -76,14 +76,14 @@ Setelah melakukan ekspolarsi pada data seutuhnya maka selanjutnya dilakukan spli
 Berikut Hasil Distribusi dan Proporsi dari data train
 
 <img src="img/06.DataTrainVisualization.jpg" width="1000"/>
-<img src="img/06.Imbalancedatatrain.jpg" width="1000"/>
+<img src="img/06.Imbalancedatatrain.jpg" width="500"/>
 
 
 Berdasarkan penggambaran grafik di atas, dapat dilihat bahwa distribusi seperti berbentuk kurva normal namun hal dapat di perkuat dengan pengujian statistik pada analisa selanjutnya. Serta pada grafik Box-Plot terdapat beberapa outlier sehingga perlu dilakukan scaller. Serta terdapat data yang impalance sehingga perlu dilakukan Over sampling,
 
 Selain distribusi kita juga dapat melihat korelasi anntar variable features.
 
-<img src="img/07. DatatrainCorrelation.jpg" width="1000"/>
+<img src="img/07. DatatrainCorrelation.jpg" width="500"/>
 
 Berdasarkan hasil penggambaran matrix korelasi, dapat dilihat bahwa hubungan antar korelasi cukup rendah, jadi dapat menghidari adanya tumpang tindig korelasi antar variable (mutually Coreelation).
 
@@ -91,7 +91,7 @@ Berdasarkan hasil penggambaran matrix korelasi, dapat dilihat bahwa hubungan ant
 Langkah Selanjutnya yaitu melakukan Uji Statistik Distribusi Normal pada data features dengan tujuan apakan data perlu dilakukan scalling atau tidak.
 
 Hasilnya sbb:
-<img src="img/08.DataTrainStatistikUji.jpg" width="1000"/>
+<img src="img/08.DataTrainStatistikUji.jpg" width="500"/>
 
 KESIMPULAN
 
@@ -111,7 +111,7 @@ X_train_res, y_train_res =  oversample.fit_resample(X_train,y_train)
 X_test_res, y_test_res =  oversample.fit_resample(X_test,y_test)
 ```
 
-<img src="img/09.ImbalanceTraget.jpg" width="1000"/>
+<img src="img/09.ImbalanceTraget.jpg" width="500"/>
 
 
 Scalling Data
@@ -128,12 +128,12 @@ y_test_std=sc.fit_transform(y_test_res)
 
 Digunakan 4 Model prediksi data cuaca dan diperoleh hasil sbb:
 
-<img src="img/10.Modelling01.jpg" width="1000"/>
-<img src="img/11. Modelling 2.jpg" width="1000"/>
+<img src="img/10.Modelling01.jpg" width="500"/>
+<img src="img/11. Modelling 2.jpg" width="500"/>
 
 Dari Hasil prediksi di atas yang memiliki model dengan performa baik adalah SVM dengan hasil matrix sbb:
 
-<img src="img/11.ConfMat.jpg" width="1000"/>
+<img src="img/11.ConfMat.jpg" width="500"/>
 
 
 ## NOTES
@@ -162,7 +162,7 @@ svc_RS = RandomizedSearchCV (estimator = SVM_Model,
 Namun hal ini memerlukan resource hardware yang cukup mumpuni mengingat tuning hyperparameter membutuhkan iterasi yang cukup kompleks.
 Pada artikel ini Tuning Hyperparameter dilakukan dengan kondisi yang minim yaitu dengan melakukan iterasi sebanyak 10 kali dan pembagian folds hanya menjadi 3 sehingga diperoleh performa yang justru menurun.
 
-<img src="img/12.ModelAfterTuning.jpg" width="1000"/>
+<img src="img/12.ModelAfterTuning.jpg" width="500"/>
 
 
 
