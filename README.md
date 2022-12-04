@@ -50,7 +50,7 @@ Selanjutnya akan dilihat bagaimana distribusi cuaca tersebut serta apakah terdap
 # Distribusi dan Proporsi
 
 <img src="img/03.DataVisualization.jpg" width="1000"/>
-<img src="img/04.LabelCount.jpg" width="1000"/>
+<img src="img/04.Label Count.jpg" width="1000"/>
 
 
 Pertama dilakukan bentuk distirbusi untuk tiap jenis dari variabel target dengan hasil sbb.
@@ -75,7 +75,7 @@ Setelah melakukan ekspolarsi pada data seutuhnya maka selanjutnya dilakukan spli
 
 Berikut Hasil Distribusi dan Proporsi dari data train
 
-<img src="img/06.DataTrain Visualization.jpg" width="1000"/>
+<img src="img/06.DataTrainVisualization.jpg" width="1000"/>
 <img src="img/06.Imbalancedatatrain.jpg" width="1000"/>
 
 
@@ -128,7 +128,7 @@ y_test_std=sc.fit_transform(y_test_res)
 
 Digunakan 4 Model prediksi data cuaca dan diperoleh hasil sbb:
 <img src="10.Modelling01.jpg" width="1000"/>
-<img src="11.Modelling02.jpg" width="1000"/>
+<img src="11. Modelling 2.jpg" width="1000"/>
 
 Dari Hasil prediksi di atas yang memiliki model dengan performa baik adalah SVM dengan hasil matrix sbb:
 
