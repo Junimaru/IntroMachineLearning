@@ -83,7 +83,7 @@ Berdasarkan penggambaran grafik di atas, dapat dilihat bahwa distribusi seperti 
 
 Selain distribusi kita juga dapat melihat korelasi anntar variable features.
 
-<img src="img/07.DatatrainCorrelation.jpg" width="1000"/>
+<img src="img/07. DatatrainCorrelation.jpg" width="1000"/>
 
 Berdasarkan hasil penggambaran matrix korelasi, dapat dilihat bahwa hubungan antar korelasi cukup rendah, jadi dapat menghidari adanya tumpang tindig korelasi antar variable (mutually Coreelation).
 
