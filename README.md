@@ -127,12 +127,13 @@ y_test_std=sc.fit_transform(y_test_res)
 ## Modelling
 
 Digunakan 4 Model prediksi data cuaca dan diperoleh hasil sbb:
-<img src="10.Modelling01.jpg" width="1000"/>
-<img src="11. Modelling 2.jpg" width="1000"/>
+
+<img src="img/10.Modelling01.jpg" width="1000"/>
+<img src="img/11. Modelling 2.jpg" width="1000"/>
 
 Dari Hasil prediksi di atas yang memiliki model dengan performa baik adalah SVM dengan hasil matrix sbb:
 
-<img src="11.ConfMat.jpg" width="1000"/>
+<img src="img/11.ConfMat.jpg" width="1000"/>
 
 
 ## NOTES
@@ -161,7 +162,7 @@ svc_RS = RandomizedSearchCV (estimator = SVM_Model,
 Namun hal ini memerlukan resource hardware yang cukup mumpuni mengingat tuning hyperparameter membutuhkan iterasi yang cukup kompleks.
 Pada artikel ini Tuning Hyperparameter dilakukan dengan kondisi yang minim yaitu dengan melakukan iterasi sebanyak 10 kali dan pembagian folds hanya menjadi 3 sehingga diperoleh performa yang justru menurun.
 
-<img src="12.ModelAfterTuning.jpg" width="1000"/>
+<img src="img/12.ModelAfterTuning.jpg" width="1000"/>
 
 
 
