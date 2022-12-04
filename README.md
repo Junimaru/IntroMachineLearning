@@ -23,7 +23,7 @@ Pengggambaran Kondisi Cuaca yang terdapat pada suatu tempat dengan dideskripsika
 
 <img src="img/01.ReadDataframe.jpg" width="500"/>
 
-Pada artikel ini akan dilakukan analisa terhadap cuaca pada Kota Denpasar yang dipengaruhi oleh faktor-faktor di atas, dengan horizon data selama 20 tahun antara 1990 s,d Januari 2020 yang diukur secara konsisten per Jam.
+Pada artikel ini akan dilakukan analisa terhadap cuaca pada Kota Denpasar yang dipengaruhi oleh faktor-faktor di atas, dengan horizon data selama 1 bulan yang diukur secara konsisten per Jam.
 
 Sumber data yang digunakan adalah data yang berasal dari https://openweathermap.org/ yang telah dikompilasi oleh Rudy Hendrawan via Kaggle.
 
@@ -43,8 +43,8 @@ round(weather.describe(),2)
 
 Secara umum hal yang dapat dijelaskan berdasarkan deskripsi statistik data di atas antara lain:
 
-Setiap feature memiliki data yang sama panjang yaitu 264.924 data, hal ini mengindikasikan data tersebut telah terisi secara lengkap. untuk lebih jelasnya dapat kita lihat pada pengecekan missing value nanti.
-Selama 20 Tahun ke belakang, rata-rata suhu perjam Kota Denpasar sebesar 27.27 derajat celcius (dapat dikatakan cukup hangat) , dengan tekanan udara sebesar 1010.03 hPa dan kelembapan sebesar 80.84% dimana hal ini dapat dikatakan cukup lembap, kecepatan angin bergerak sebesar 3,61 m/s tidak terlalu kencang.
+Setiap feature memiliki data yang sama panjang yaitu 8.809 data, hal ini mengindikasikan data tersebut telah terisi secara lengkap. untuk lebih jelasnya dapat kita lihat pada pengecekan missing value nanti.
+Selama  Tahun ke belakang, rata-rata suhu perjam Kota Denpasar sebesar 27.46 derajat celcius (dapat dikatakan cukup hangat) , dengan tekanan udara sebesar 1010.79 hPa dan kelembapan sebesar 82.26% dimana hal ini dapat dikatakan cukup lembap, kecepatan angin bergerak sebesar 3,95 m/s tidak terlalu kencang.
 Selanjutnya akan dilihat bagaimana distribusi cuaca tersebut serta apakah terdapat Outlier pada data tersebut.
 
 # Distribusi dan Proporsi
